@@ -15,11 +15,12 @@ If you are on a windows machine you will want to run:
 If this was successful you should be able to open docker desktop and see an image with the name parflow/python_dev_environment
 
 # Starting the dev container
-Once you have built the image there is a script that will start a dev container configured to allow you to run python scripts with pftools. By default, this container will be mounted to wherever you run the script from. Once in, you will brought to the /data folder where you will be able to see and edit all of your local files. Note that the /data folder is not like a dream, IF YOU DELETE FILES HERE THEY GET DELETED IN REAL LIFE. The script is run via:
+Once you have built the image there is a script that will start a dev container configured to allow you to run python scripts with pftools. By default, this container will be mounted to wherever you run the script from. Once in, you will be brought to the /data folder where you will be able to see and edit all of the files that were in your local path when you ran the command. Note that the /data folder is not like a dream, IF YOU DELETE FILES HERE THEY GET DELETED IN REAL LIFE. 
+If you are unfamilar with docker you can think of this as logging you in to another computer with parflow already installed, except that that computer can also read and write to the folder you were in when you ran it.
+The script is run via:
 ```
 ./bin/start_dev_container.sh
 ```
-If you are unfamilar with docker you can think of the above as having logged you in to another computer with parflow already installed, except that that computer can also read and write to the folder you were in when you ran it.
 
 Once in the dev container you can try running the parflow example via 
 ```
