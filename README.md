@@ -19,6 +19,8 @@ Once you have built the image there is a script that will start a dev container 
 ```
 ./bin/start_dev_container.sh
 ```
+If you are unfamilar with docker you can think of the above as having logged you in to another computer with parflow already installed, and that computer can also read and write from the folder you were in when you ran it.
+
 Once in the dev container you can try running the parflow example via 
 ```
 python3 main/PF_TiltedV_train.py
