@@ -23,7 +23,7 @@ Once in the dev container you can try running the parflow example via
 ```
 python3 main/PF_TiltedV_train.py
 ```
-Afterwards you can see your output in main/TV-Ensemble-Training-InRange. This directory is in the gitignore, so you shouldn't have to worry about accidentally committing data. If you add more output locations I would recommend doing the same with them.
+Afterwards you can see your output in main/TV-Ensemble-Training-InRange. Note you do not have to be in the container to do so, and can edit the python scripts without restarting the container. Also, this directory is in the gitignore, so you shouldn't have to worry about accidentally committing data. If you add more output locations I would recommend doing the same with them.
 
 This script also accepts configuration of mount location, created container name, and image used:
 ```
