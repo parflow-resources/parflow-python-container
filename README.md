@@ -32,3 +32,8 @@ This script also accepts configuration of mount location, created container name
 
 This repo does not currently have a script to start a dev container for windows, but if you want to write one the important components are the volume mounted with the -v tag, and setting the container to use a utf-8 encoding so python can play nice and actually do file i/o (-e LANG=en_US.utf8).
 
+# Adding python packages to the dev container
+If you need to install new python packages in the dev container you can do so by simply adding the package name in the requirements.txt file. Note that whenever you add a new package you will need to rebuild the dev container (./bin/build_repo.sh) and restart it.
+
+You can also install packages inside an already running container but if you do so they will not be there the next time you start it.
+

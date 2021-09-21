@@ -24,8 +24,13 @@ WORKDIR /data
 
 RUN yum -y update
 RUN yum -y install python3
-RUN python3 -m pip install pandas
-RUN python3 -m pip install pftools
 RUN yum -y install zsh
+COPY requirements.txt /opt/app/requirements.txt
+WORKDIR /opt/app
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install -r requirements.txt
+COPY . /opt/app
+WORKDIR /data
+
 
 ENTRYPOINT ["zsh"]
