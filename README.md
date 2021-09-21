@@ -42,3 +42,7 @@ If you need to install new python packages in the dev container you can do so by
 
 You can also install packages inside an already running container but if you do so they will not be there the next time you start it.
 
+# Some TODOS
+I (Ben West) have some of these on my radar. If one of these workflows would help you out let me know and I might be able to bump it up in terms of priority.
+- Visualizing output from docker container. Would need to figure out how to connect the container to the computer display. Not a must because you can run scripts to visualize just fine outside of the container, and the section of pftools that does parflow specific file io doesn't require parflow to actually be working.
+- Allowing jupyter notebook development inside of the container. This is also possible in theory, but requires some configuration.
