@@ -25,10 +25,10 @@ WORKDIR /data
 RUN yum -y update
 RUN yum -y install python3
 RUN yum -y install zsh
-COPY requirements.txt /opt/app/requirements.txt
+COPY container_requirements.txt /opt/app/container_requirements.txt
 WORKDIR /opt/app
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install -r requirements.txt
+RUN python3 -m pip install -r container_requirements.txt
 COPY . /opt/app
 WORKDIR /data
 
