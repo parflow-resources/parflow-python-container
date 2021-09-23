@@ -1,2 +1,3 @@
 parflowio
 matplotlib
+seaborn

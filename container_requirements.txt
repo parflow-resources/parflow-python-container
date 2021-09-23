@@ -1,4 +1,2 @@
 pandas
 pftools
-parflowio
-matplotlib
