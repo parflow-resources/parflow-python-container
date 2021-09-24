@@ -2,7 +2,7 @@
 # start by building the basic container
 #-----------------------------------------------------------------------------
 FROM parflow/parflow:latest
-MAINTAINER Steven Smith <smith84@llnl.gov>
+MAINTAINER Ben West <benjaminwest@email.arizona.edu>
 
 #-----------------------------------------------------------------------------
 # Set environment vars
