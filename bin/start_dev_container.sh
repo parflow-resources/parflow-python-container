@@ -9,4 +9,4 @@ do
         m) mount_location=${OPTARG};;
     esac
 done
-docker run --rm -it --name=${container_name} -e LANG=en_US.utf8 -v ${mount_location}:/data/  ${image}
+docker run --rm -it --env=DISPLAY --name=${container_name} -e LANG=en_US.utf8 -v ${mount_location}:/data/  ${image}
