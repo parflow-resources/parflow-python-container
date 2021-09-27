@@ -22,13 +22,10 @@ WORKDIR /data
 # Setup for running interacting with Parflow via python inside the docker
 #-----------------------------------------------------------------------------
 
-RUN yum -y update
-RUN yum -y install python3
-RUN yum -y install zsh
+RUN yum -y update && yum -y install python3 && yum -y install zsh
 COPY container_requirements.txt /opt/app/container_requirements.txt
 WORKDIR /opt/app
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install -r container_requirements.txt
+RUN python3 -m pip install --upgrade pip && python3 -m pip install -r container_requirements.txt
 COPY . /opt/app
 WORKDIR /data
 
