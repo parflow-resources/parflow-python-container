@@ -3,16 +3,14 @@ This repo is an example of how to run the parflow in a docker container with sup
 
 Tools provied are the container, a script for building the container, a script for starting the container mounted to your hard drive so you can directly edit and run files on your computer, and a script for updating to the latest version of parflow whenever you need.
 
+Right now the repo is tested on UNIX only but I have provided equivelant scripts for windows. If you use them and they work please let me know (benjaminwest@email.arizona.edu) so I can update this README accordingly. 
+
 # Building the repo
 You will need to have docker installed and running. If you do not, follow these docs: https://docs.docker.com/
 
 Once you have docker installed building the repo should be rather simple. If on unix, navigate to the top level folder here (parflow-python example) and run the command:
 ```
 ./bin/build_dev_container.sh
-```
-If you are on a windows machine you will want to run:
-```
-.\bin\build_dev_container.bat
 ```
 If this was successful you should be able to open docker desktop and see an image with the name parflow/python_dev_environment
 
