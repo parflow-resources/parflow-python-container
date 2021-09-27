@@ -32,7 +32,7 @@ If you are unfamilar with docker you can think of this as logging you in to anot
 # Using/Testing the dev container
 If you'd like to validate the dev container is working I recommend cloning the parflow short course repository: https://github.com/hydroframe/ParFlow_Short_Course
 
-Once you've done that use open a terminal window and navigate to ParFlow_Short_Course/. Then enter 
+Once you've done that open a terminal window and navigate to ParFlow_Short_Course. Then enter 
 ```
 start_parflow_container
 ```
