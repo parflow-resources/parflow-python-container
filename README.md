@@ -14,7 +14,7 @@ Once you have docker installed building the repo should be rather simple. If on 
 ```
 If this was successful you should be able to open docker desktop and see an image with the name parflow/python_dev_environment
 
-# Starting the dev container (UNIX)
+# Making a command to start the dev container
 Once you have built the image there is a script that will start a dev container configured to allow you to run python scripts with pftools. By default, this container will be mounted to wherever you run the script from. Once in, you will be brought to a folder where you will be able to see and edit all of the files that were in your local path when you ran the command. Note that this folder is not like a dream, IF YOU DELETE FILES HERE THEY GET DELETED IN REAL LIFE.
 
 In order to more easily start the dev container anywhere you can alias the script to do so. Open your ~/.bashrc file or equivelent and add the line:
@@ -70,7 +70,7 @@ This repo does not currently have a script to start a dev container for windows,
 
 
 # Adding python packages to the dev container
-If you need to install new python packages in the dev container you can do so by simply adding the package name in the container_requirements.txt file. Note that whenever you add a new package you will need to rebuild the dev container (./bin/build_dev_container.sh) and restart it.
+If you need to install new python packages in the dev container you can do so by simply adding the package name in the container_requirements.txt file. Note that whenever you add a new package you will need to rebuild the dev container (./bin/build_dev_container.sh) and restart any running instances.
 
 You can also install packages inside an already running container but if you do so they will not be there the next time you start it.
 
