@@ -30,25 +30,27 @@ Now you should be able to start the dev container anywhere by entering ```start_
 If you are unfamilar with docker you can think of this as logging you in to another computer with parflow already installed, except that that computer can also read and write to the folder you were in when you ran it.
 
 # Using/Testing the dev container
-If you'd like to validate the dev container is working I recommend cloning the main repository: https://github.com/parflow/parflow
+If you'd like to validate the dev container is working I recommend cloning the parflow short course repository: https://github.com/hydroframe/ParFlow_Short_Course
 
-Once you've done that use open a terminal window and navigate to parflow/examples. Then enter 
+Once you've done that use open a terminal window and navigate to ParFlow_Short_Course/. Then enter 
 ```
 start_parflow_container
 ```
-
-Next make a folder for your output and navigate into it:
+And navigate to one of the example folders
 ```
-mkdir test_output && cd test_output
+cd Examples/Little_Washita
 ```
-Now pick an example to run from the directory above e.g. ```tclsh ../default_richards.tcl 1 1 1```
+Now pick an example and run it e.g. 
+```
+tclsh ./LW_Exercise2.tcl
+```
 
-Once the example has run exit the dev container by pressing ctrl+d and note the outputs are still available
+Once the example has run exit the dev container by pressing ctrl+d and note the outputs are still available in LW_CLM_Ex2
 
 This is the same workflow you would follow for your own development. In summary:
 1) Navigate to the folder you want the dev container for
 2) Start the dev container using ```start_parflow_container```
-3) Run any parflow commands inside the container, but feel free to continue working on files in other editors.
+3) Run any parflow commands inside the container, but feel free to continue working on input files in other editors between runs.
 
 The workflow for python scripts is the same you just run them with python instead of tclsh e.g.
 ```
@@ -56,7 +58,7 @@ python3 my_script.py
 ```
 instead of 
 ```
-tclsh ../default_richards.tcl 1 1 1
+tclsh ./LW_Exercise2.tcl
 ```
 
 Lastly, if needed this script also accepts configuration of mount location, created container name, and image used:
