@@ -1,4 +1,4 @@
-# parflow-python-example
+# parflow-python-container
 This repo is an example of how to run the parflow python sdk (pftools) in a docker container. It contains a script for building the container, and a script for starting the container mounted to your hard drive so you can directly edit and run files on your computer.
 
 # Building the repo
