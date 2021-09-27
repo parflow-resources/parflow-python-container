@@ -70,7 +70,7 @@ If you need to install new python packages in the dev container you can do so by
 You can also install packages inside an already running container but if you do so they will not be there the next time you start it.
 
 # Updating to the latest parflow version
-By default when you rebuild the container it will not grab the latest parflow version (for performance reasons) but if you would like to update at any point simply run ```./force_update_dev_container```
+By default when you rebuild the container it will not grab the latest parflow version (for performance reasons) but if you would like to update at any point simply run ```./force_update_dev_container.sh```
 
 # Some TODOS
 I (Ben West) have some of these on my radar. If one of these workflows would help you out let me know and I might be able to bump it up in terms of priority.
