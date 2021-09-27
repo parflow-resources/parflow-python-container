@@ -32,13 +32,16 @@ If you are unfamilar with docker you can think of this as logging you in to anot
 # Using/Testing the dev container
 If you'd like to validate the dev container is working I recommend cloning the main repository: https://github.com/parflow/parflow
 
-Once you've done that use open a terminal window and navigate to parflow/examples. Then enter ```start_parflow_container```.
+Once you've done that use open a terminal window and navigate to parflow/examples. Then enter 
+```
+start_parflow_container
+```
 
-Next make a folder for your output:
+Next make a folder for your output and navigate into it:
 ```
 mkdir test_output && cd test_output
 ```
-Now pick an example to run e.g. ```tclsh ../default_richards.tcl 1 1 1```
+Now pick an example to run from the directory above e.g. ```tclsh ../default_richards.tcl 1 1 1```
 
 Once the example has run exit the dev container by pressing ctrl+d and note the outputs are still available
 
