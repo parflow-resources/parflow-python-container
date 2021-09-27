@@ -78,7 +78,7 @@ You can also install packages inside an already running container but if you do 
 By default when you rebuild the container it will not grab the latest parflow version (for performance reasons) but if you would like to update at any point simply run ```./force_update_dev_container.sh```
 
 # What if I'm on windows?
-I've included .bat files that should work, though only build_dev_container.bat has been tested. You should be able to follow the instructions subbing these in, though I'm not sure of how aliasing works on windows.
+I've included .bat files that should work, though only build_dev_container.bat has been tested. You should be able to follow the instructions subbing these in whenever you see a .sh file, though I'm not sure of how aliasing works on windows.
 
 # Some TODOS
 I (Ben West) have some of these on my radar. If one of these workflows would help you out let me know and I might be able to bump it up in terms of priority.
