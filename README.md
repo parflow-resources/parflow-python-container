@@ -15,9 +15,9 @@ If you are on a windows machine you will want to run:
 If this was successful you should be able to open docker desktop and see an image with the name parflow/python_dev_environment
 
 # Starting the dev container
-Once you have built the image there is a script that will start a dev container configured to allow you to run python scripts with pftools. By default, this container will be mounted to wherever you run the script from. Once in, you will be brought to the /data folder where you will be able to see and edit all of the files that were in your local path when you ran the command. Note that the /data folder is not like a dream, IF YOU DELETE FILES HERE THEY GET DELETED IN REAL LIFE.
+Once you have built the image there is a script that will start a dev container configured to allow you to run python scripts with pftools. By default, this container will be mounted to wherever you run the script from. Once in, you will be brought to a folder where you will be able to see and edit all of the files that were in your local path when you ran the command. Note that this folder is not like a dream, IF YOU DELETE FILES HERE THEY GET DELETED IN REAL LIFE.
 
-In order to more easily start the dev container anywhere you can alias the script to do so. Open your ~/.bashrc file and add the line:
+In order to more easily start the dev container anywhere you can alias the script to do so. Open your ~/.bashrc file or equivelent and add the line:
 ```
 alias start_parflow_container="{PATH}/{TO}/parflow-python-container/bin/start_dev_container.sh"
 ```
