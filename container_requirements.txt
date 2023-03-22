@@ -2,4 +2,3 @@ pandas
 pftools
 numpy
 scipy
-parflowio
